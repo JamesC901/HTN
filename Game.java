@@ -1,14 +1,13 @@
-
 public class Game {
-  private String rank;
+//  private String rank;
   private String gname;
-  private String players;
+  private int players;
 
-  public Game() {
-    String gname;
-    String rank;
-    String players;
+  public Game(String gname, int players) {
+    this.gname = gname;
+    this.players = players;
   }
+  
     public String getGname() {
       return gname;
     }
@@ -16,13 +15,13 @@ public class Game {
       this.gname = ngname;
     }
 
-    public String getRank() {
+ /*   public String getRank() {
       return rank;
     }
     public void setRank(String nrank) {
       this.rank = nrank;
     }
-
+*/
     public String getPlayers() {
       return players;
     }
@@ -32,5 +31,3 @@ public class Game {
   }
 
   
-  
-
