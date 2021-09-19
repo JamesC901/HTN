@@ -1,13 +1,16 @@
+import java.util.ArrayList;
+
 public class Game {
-//  private String rank;
+
+  private ArrayList<String> Ranks;
   private String gname;
   private int players;
+  private ArrayList<String> Roles;
 
   public Game(String gname, int players) {
     this.gname = gname;
     this.players = players;
   }
-  
     public String getGname() {
       return gname;
     }
@@ -22,11 +25,11 @@ public class Game {
       this.rank = nrank;
     }
 */
-    public String getPlayers() {
-      return players;
+    public int getPlayers() {
+        return players;
     }
     public void setPlayers(String nplayers){
-      this.players = nplayers;
+        this.players = players;
     }
   }
 

@@ -2,12 +2,13 @@ import java.util.ArrayList;
 
 public class Person {
 
+
   private String uname = "";
   private String fname = "";
   private ArrayList<Game> games;
   private String pronouns = "";
   private int age;
-  ArrayList<Person> friends = new ArrayList<Person>();  
+  private ArrayList<Person> friends = new ArrayList<Person>();
   private String dtag = "";
   
   public Person(){
@@ -43,7 +44,14 @@ public class Person {
   public void removeFriends(Person friend) {
     friends.remove(friend);
  }
-  
+
+   public void addGames(Game game) {
+     games.add(game);
+ }
+   public void removeGames(Game game){
+     games.add(game);
+   }
+
   
   public static void main (String args[]) {
     ArrayList<Game> s = new ArrayList<Game>();
